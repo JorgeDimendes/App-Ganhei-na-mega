@@ -22,12 +22,17 @@ class MainActivity : AppCompatActivity() {
 
         // Opção 03: Mais simples possivel- Bloco de codigo que será disparado pelo onClickListener
         buttonGenerate.setOnClickListener {
-            Log.i("Teste", "Botão clicado!!!")
 
+            val text = editText.text.toString()
+
+            numberGenerator(text, txtResult)
+            txtResult.text = text
         }
 
     }
 
+    private fun numberGenerator(text: String, txtResult: TextView){
 
+    }
 
 }
