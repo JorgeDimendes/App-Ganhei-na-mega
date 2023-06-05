@@ -7,54 +7,50 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/text_Title"
+        android:id="@+id/txt_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:textColor="@color/purple_500"
         android:textSize="36sp"
         android:textStyle="bold"
-        android:textColor="@color/purple_500"
+        android:layout_marginTop="32dp"
         android:text="@string/title"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editnumber"
+        android:id="@+id/edit_number"
         android:layout_width="wrap_content"
-        android:layout_height="48dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:maxLength="2"
-        android:textAlignment="center"
-        android:hint="@string/editName"
         android:inputType="number"
+        android:textAlignment="center"
+        android:maxLength="2"
+        android:hint="@string/number_hint"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_Title" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_title" />
 
     <TextView
-        android:id="@+id/textresult"
+        android:id="@+id/txt_result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:hint="01 06 24 36 41 52"
-        android:text=""
-        android:textSize="32sp"
+        android:textSize="20sp"
+        tools:text="Ola mundo"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.526"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editnumber" />
+        app:layout_constraintTop_toBottomOf="@+id/edit_number" />
 
     <Button
-        android:id="@+id/button_generateNumbers"
+        android:id="@+id/btn_generate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="@string/btnGenerate"
-        android:textSize="25sp"
+        android:text="@string/number_generator"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textresult" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_result" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
