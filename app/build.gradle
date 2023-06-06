@@ -7,7 +7,7 @@ android {
     compileSdkVersion 31
 
     defaultConfig {
-        applicationId "co.tiagoaguiar.ganheinamega"
+        applicationId "com.jordev.ganheinamega"
         minSdkVersion 21
         targetSdkVersion 30
         versionCode 1
